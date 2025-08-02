@@ -5,7 +5,7 @@
 local aimbotAtivo = true
 local teclaAim = Enum.UserInputType.MouseButton2 -- Botão direito do mouse
 local aimFov = 100 -- Campo de visão do aimbot
-local aimSmooth = 0.1 -- Suavidade do aimbot
+local aimSmooth = 1 -- Suavidade do aimbot
 local espAtivo = true
 
 -- INÍCIO DO SCRIPT
@@ -31,11 +31,11 @@ end
 -- ESP
 function criarESP(player)
     local box = Drawing.new("Text")
-    box.Size = 13
+    box.Size = 15
     box.Center = true
     box.Outline = true
     box.Color = Color3.fromRGB(255, 0, 0)
-    box.Visible = false
+    box.Visible = true
 
     DrawingESP[player] = box
 end
@@ -122,3 +122,4 @@ RunService.RenderStepped:Connect(function()
         end
     end
 end)
+
