@@ -5,7 +5,7 @@
 local aimbotAtivo = true
 local teclaAim = Enum.UserInputType.MouseButton2 -- Botão direito do mouse
 local aimFov = 100 -- Campo de visão do aimbot
-local aimSmooth = 1 -- Suavidade do aimbot
+local aimSmooth = 0.5 -- Suavidade do aimbot
 local espAtivo = true
 
 -- INÍCIO DO SCRIPT
